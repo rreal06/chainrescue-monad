@@ -1,0 +1,15 @@
+node_modules/
+dist/
+artifacts/
+cache/
+coverage/
+typechain-types/
+.env
+.env.local
+deployments/
+LINKBREAK_Devam_Dokumantasyonu.md
+*.tsbuildinfo
+/scripts/*.js
+/scripts/*.d.ts
+/test/*.js
+/test/*.d.ts

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-slate-700; }
+  body { @apply min-h-screen bg-ink text-slate-100 antialiased; }
+  button, input, select, textarea { font: inherit; }
+}
+
+@layer components {
+  .panel { @apply rounded-2xl border border-slate-700/80 bg-panel/90 shadow-panel; }
+  .section-label { @apply text-xs font-bold uppercase tracking-[0.18em] text-slate-400; }
+  .field { @apply mt-1.5 w-full rounded-xl border border-slate-600 bg-slate-950/50 px-3 py-2.5 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-signal focus:ring-1 focus:ring-signal; }
+  .button-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-signal px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-orange-300 disabled:cursor-not-allowed disabled:opacity-50; }
+  .button-secondary { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-600 bg-slate-800 px-4 py-2.5 text-sm font-semibold text-slate-100 transition hover:border-slate-400 hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-50; }
+}
